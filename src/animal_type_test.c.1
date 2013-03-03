@@ -1,0 +1,19 @@
+/**
+ * @(#) animal_type_test.c
+ */
+#include "typedef.h"
+#include "animal_type.h"
+
+int main(int argc, char* argv[]) {
+
+    int size = ARRAY_SIZE(global_animal_type_string_map);
+    int i = 0;
+
+    for(i = 0; i < size; i++) {
+        printf("%d, %s\n", global_animal_type_string_map[i].type, 
+                         global_animal_type_string_map[i].named_string);
+    }
+    
+    return 0;
+      
+}
